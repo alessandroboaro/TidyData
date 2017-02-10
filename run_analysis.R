@@ -40,6 +40,5 @@ activity_mean<-aggregate(.~Activity_desc, data=full_dataset, mean)
 #SD by activity
 activity_sd<-aggregate(.~Activity_desc, data=full_dataset, sd)
 
-
 #Save the file with means by activity
 write.table(activity_mean,"mean by activity.txt",row.names=FALSE)
